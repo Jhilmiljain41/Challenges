@@ -1,0 +1,875 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>AI and Data Science Challenges</title>
+  <!--bootstrap-->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="css/styles.css">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+    <script type="text/javascript" src="path_to/jquery.js"></script>
+    <script type="text/javascript" src="path_to/jquery.simplePagination.js"></script>
+</head>
+
+<body data-bs-spy="scroll" data-bs-target="#navbar-example2" data-bs-offset="0" class="scrollspy-example" tabindex="0">
+  <section class="shadow-sm">
+    <div id="header">
+    <nav class="navbar navbar-expand-lg navbar-light bg-white">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">Navbar</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0 ms-auto">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Courses</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Challenges
+              </a>
+              <ul class="dropdown-menu shadow-sm" aria-labelledby="navbarDropdown">
+                <li><a class="dropdown-item" href="#">Active/upcoming</a></li>
+                <li><a class="dropdown-item" href="#">Practice</a></li>
+              </ul>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Bootcamps
+              </a>
+              <ul class="dropdown-menu shadow-sm" aria-labelledby="navbarDropdown">
+                <li><a class="dropdown-item" href="#">View All Bootcamp</a></li>
+                <li><a class="dropdown-item" href="#">Data Engineering</a></li>
+                <li><a class="dropdown-item" href="#">Data Science by IIT-Analytics clubs and Dphi</a></li>
+                <li><a class="dropdown-item" href="#">Deep Learning by IIT-Analytics clubs and Dphi</a></li>
+              </ul>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                More
+              </a>
+              <ul class="dropdown-menu shadow-sm" aria-labelledby="navbarDropdown">
+                <li><a class="dropdown-item" href="#">Notebooks</a></li>
+                <li><a class="dropdown-item" href="#">Live Sessions</a></li>
+                <li><a class="dropdown-item" href="#">Discuss</a></li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="#">Donate</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="#">Wall of Love</a>
+            </li>
+          </ul>
+          <form class="d-flex">
+            <button class="btn px-4 py-2 btn-outline-success me-2" type="submit">Login</button>
+            <button class="btn px-4 py-2 btn-success shadow" type="submit">Join for free</button>
+          </form>
+        </div>
+      </div>
+    </nav>
+  </div>
+  </section>
+  <section id="banner-section">
+    <div id="banner">
+      <div class="container-fluid">
+        <div class="row pt-4">
+          <div class="col text-lg-start text-md-center">
+            <h1 class="mb-4">What are AI Challenges?</h1>
+            <p>AI Challenges at DPhi simulate real-world problems. It is a great place to put your AI/Data Science skills to test on diverse datasets allowing you to foster learning through competitions.</p>
+            <div class="d-flex my-5 login-buttons">
+              <button class="btn px-4 py-2 btn-success me-2" type="submit">Get Started</button>
+              <button class="btn px-4 py-2 btn-outline-secondary shadow" type="submit">Organized AI Challenges</button>
+            </div>
+          </div>
+          <div class="col d-flex justify-content-center">
+            <img src="images/side-img.png" style="width: 254px;height: 301px;">
+          </div>
+        </div>
+        <div class="rating">
+          <div class="row justify-content-center">
+            <div class="col box">
+              <p class="num fw-bolder">100k+</p>
+              <p>AI model submissions</p>
+            </div>
+            <div class="col box">
+              <p class="num fw-bolder">50k+</p>
+              <p>Data Scientists</p>
+            </div>
+            <div class="col box">
+              <p class="num fw-bolder">100+</p>
+              <p>AI Challenges hosted</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="shadow sticky-top navbar-light bg-white">
+    <div id="header">
+      <nav id="navbar-example2" class="navbar px-3">
+        <ul class="nav">
+          <li class="nav-item active">
+            <a class="nav-link" href="#active">Active</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#upcoming">Upcoming</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#past">Past</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+    </section>
+
+    <section id="active">
+      <div id="active-section">
+        <div class="py-3">
+          <div class="active-img">
+            <div class="my-3">
+              <div class="p-3 d-flex justify-content-center">
+                <img src="images/active.png" style="width:40%; height:40%;">
+              </div>
+              <div class="active-text p-2 text-center">
+                <p class="fs-5 fw-bold m-0">No active challenges</p>
+                <p class="m-0">Please check upcoming challenges</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="active" class="my-3 py-2" style="background-color: #F5F5FF;">
+      <div id="ai-challenges">
+        <div class="p-3 text-lg-start">
+          <h3>Why participate in AI challenges?</h3>
+        </div>
+        <div class="container-fluid">
+          <div class="row">
+          <div class="col">
+            <div class="contain-1 row">
+              <div class="col contain-img">
+                <div class="contain-img1">
+                  <img src="images/logical-thinking.png" style="width: 60%; height: 60%; object-fit: cover;">
+                </div>
+              </div>
+              <div class="col contain-text mb-0">
+                <h5>Prove your skills</h5>
+                <p>Gain substantial experience by solving real-world problems and pit against others to come up with innovative solutions.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="contain-1 row">
+              <div class="col contain-img">
+                <div class="contain-img1">
+                  <img src="images/challenges.png" style="width: 60%; height: 60%; object-fit: cover;">
+                </div>
+              </div>
+              <div class="col contain-text mb-0">
+                <h5>Earn recognition</h5>
+                <p>You will stand out from the crowd if you do well in AI challenges, it not only helps you shine in the community but also earns rewards.</p>
+              </div>
+            </div>
+          </div> 
+          <div class="w-100"></div>
+          <div class="col">
+            <div class="contain-1 row">
+              <div class="col contain-img">
+                <div class="contain-img1">
+                  <img src="images/companies.png" style="width: 60%; height: 60%; object-fit: cover;">
+                </div>
+              </div>
+              <div class="col contain-text mb-0">
+                <h5>Challenge yourself</h5>
+                <p>There is nothing for you to lose by participating in a challenge. You can fail safe, learn out of the entire experience and bounce back harder.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="contain-1 row">
+              <div class="col contain-img">
+                <div class="contain-img1">
+                  <img src="images/teamwork.png" style="width: 60%; height: 60%; object-fit: cover;">
+                </div>
+              </div>
+              <div class="col contain-text mb-0">
+                <h5>Learn from community</h5>
+                <p>One can look and analyze the solutions submitted by the other Data Scientists in the community and learn from them.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      </div>
+    </section>
+    <section id="upcoming" style="margin-top: 40px;">
+      <div class="upcoming-section" style="padding-bottom: 40px;">
+        <div class="upcoming-section-heading text-start">
+          <h4 style="border-bottom: 2px solid #B87D00;">Upcoming Challenges</h4>
+        </div>
+        <div class="upcoming-card">
+          <div class="row row-cols-1 row-cols-md-3 g-5">
+            <div class="col">
+              <div class="card shadow" style=" border: 0px;">
+                <img src="images/card-img.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title mb-3">Data Spring 82-Smart-Grid Stability Prediction</h5>
+                  <p class="card-text text-secondary mb-0">Start on</p>
+                  <p class="card-text">08 jul'22 21:00</p>
+                  <a href="#" class="btn btn-outline-success">view more</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="past" class="shadow-sm">
+      <div class="past-section" style="padding-bottom: 40px;">
+        <div class="past-section-heading text-start">
+          <h4 style="border-bottom: 2px solid #B87D00;">Past Challenges</h4>
+        </div>
+        <div class="past-card">
+          <div class="card-box row row-cols-1 row-cols-md-3 g-5">
+            <div class="col">
+              <div class="card shadow" style=" border: 0px;">
+                <img src="images/card-img.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title mb-3">Data Spring 82-Smart-Grid Stability Prediction</h5>
+                  <p class="card-text text-secondary mb-0">Start on</p>
+                  <p class="card-text">08 jul'22 21:00</p>
+                  <a href="#" class="btn btn-outline-success">view more</a>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card shadow" style=" border: 0px;">
+                <img src="images/card-img.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title mb-3">Data Spring 82-Smart-Grid Stability Prediction</h5>
+                  <p class="card-text text-secondary mb-0">Start on</p>
+                  <p class="card-text">08 jul'22 21:00</p>
+                  <a href="#" class="btn btn-outline-success">view more</a>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card shadow" style=" border: 0px;">
+                <img src="images/card-img.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title mb-3">Data Spring 82-Smart-Grid Stability Prediction</h5>
+                  <p class="card-text text-secondary mb-0">Start on</p>
+                  <p class="card-text">08 jul'22 21:00</p>
+                  <a href="#" class="btn btn-outline-success">view more</a>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card shadow" style=" border: 0px;">
+                <img src="images/card-img.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title mb-3">Data Spring 82-Smart-Grid Stability Prediction</h5>
+                  <p class="card-text text-secondary mb-0">Start on</p>
+                  <p class="card-text">08 jul'22 21:00</p>
+                  <a href="#" class="btn btn-outline-success">view more</a>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card shadow" style=" border: 0px;">
+                <img src="images/card-img.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title mb-3">Data Spring 82-Smart-Grid Stability Prediction</h5>
+                  <p class="card-text text-secondary mb-0">Start on</p>
+                  <p class="card-text">08 jul'22 21:00</p>
+                  <a href="#" class="btn btn-outline-success">view more</a>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card shadow" style=" border: 0px;">
+                <img src="images/card-img.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title mb-3">Data Spring 82-Smart-Grid Stability Prediction</h5>
+                  <p class="card-text text-secondary mb-0">Start on</p>
+                  <p class="card-text">08 jul'22 21:00</p>
+                  <a href="#" class="btn btn-outline-success">view more</a>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card shadow" style=" border: 0px;">
+                <img src="images/card-img.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title mb-3">Data Spring 82-Smart-Grid Stability Prediction</h5>
+                  <p class="card-text text-secondary mb-0">Start on</p>
+                  <p class="card-text">08 jul'22 21:00</p>
+                  <a href="#" class="btn btn-outline-success">view more</a>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card shadow" style=" border: 0px;">
+                <img src="images/card-img.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title mb-3">Data Spring 82-Smart-Grid Stability Prediction</h5>
+                  <p class="card-text text-secondary mb-0">Start on</p>
+                  <p class="card-text">08 jul'22 21:00</p>
+                  <a href="#" class="btn btn-outline-success">view more</a>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card shadow" style=" border: 0px;">
+                <img src="images/card-img.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title mb-3">Data Spring 82-Smart-Grid Stability Prediction</h5>
+                  <p class="card-text text-secondary mb-0">Start on</p>
+                  <p class="card-text">08 jul'22 21:00</p>
+                  <a href="#" class="btn btn-outline-success">view more</a>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card shadow" style=" border: 0px;">
+                <img src="images/card-img.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title mb-3">Data Spring 82-Smart-Grid Stability Prediction</h5>
+                  <p class="card-text text-secondary mb-0">Start on</p>
+                  <p class="card-text">08 jul'22 21:00</p>
+                  <a href="#" class="btn btn-outline-success">view more</a>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card shadow" style=" border: 0px;">
+                <img src="images/card-img.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title mb-3">Data Spring 82-Smart-Grid Stability Prediction</h5>
+                  <p class="card-text text-secondary mb-0">Start on</p>
+                  <p class="card-text">08 jul'22 21:00</p>
+                  <a href="#" class="btn btn-outline-success">view more</a>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card shadow" style=" border: 0px;">
+                <img src="images/card-img.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title mb-3">Data Spring 82-Smart-Grid Stability Prediction</h5>
+                  <p class="card-text text-secondary mb-0">Start on</p>
+                  <p class="card-text">08 jul'22 21:00</p>
+                  <a href="#" class="btn btn-outline-success">view more</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="card-box row row-cols-1 row-cols-md-3 g-5">
+            <div class="col">
+              <div class="card shadow" style=" border: 0px;">
+                <img src="images/card-img.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title mb-3">Data Spring 82-Smart-Grid Stability Prediction</h5>
+                  <p class="card-text text-secondary mb-0">Start on</p>
+                  <p class="card-text">08 jul'22 21:00</p>
+                  <a href="#" class="btn btn-outline-success">view more</a>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card shadow" style=" border: 0px;">
+                <img src="images/card-img.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title mb-3">Data Spring 82-Smart-Grid Stability Prediction</h5>
+                  <p class="card-text text-secondary mb-0">Start on</p>
+                  <p class="card-text">08 jul'22 21:00</p>
+                  <a href="#" class="btn btn-outline-success">view more</a>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card shadow" style=" border: 0px;">
+                <img src="images/card-img.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title mb-3">Data Spring 82-Smart-Grid Stability Prediction</h5>
+                  <p class="card-text text-secondary mb-0">Start on</p>
+                  <p class="card-text">08 jul'22 21:00</p>
+                  <a href="#" class="btn btn-outline-success">view more</a>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card shadow" style=" border: 0px;">
+                <img src="images/card-img.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title mb-3">Data Spring 82-Smart-Grid Stability Prediction</h5>
+                  <p class="card-text text-secondary mb-0">Start on</p>
+                  <p class="card-text">08 jul'22 21:00</p>
+                  <a href="#" class="btn btn-outline-success">view more</a>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card shadow" style=" border: 0px;">
+                <img src="images/card-img.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title mb-3">Data Spring 82-Smart-Grid Stability Prediction</h5>
+                  <p class="card-text text-secondary mb-0">Start on</p>
+                  <p class="card-text">08 jul'22 21:00</p>
+                  <a href="#" class="btn btn-outline-success">view more</a>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card shadow" style=" border: 0px;">
+                <img src="images/card-img.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title mb-3">Data Spring 82-Smart-Grid Stability Prediction</h5>
+                  <p class="card-text text-secondary mb-0">Start on</p>
+                  <p class="card-text">08 jul'22 21:00</p>
+                  <a href="#" class="btn btn-outline-success">view more</a>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card shadow" style=" border: 0px;">
+                <img src="images/card-img.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title mb-3">Data Spring 82-Smart-Grid Stability Prediction</h5>
+                  <p class="card-text text-secondary mb-0">Start on</p>
+                  <p class="card-text">08 jul'22 21:00</p>
+                  <a href="#" class="btn btn-outline-success">view more</a>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card shadow" style=" border: 0px;">
+                <img src="images/card-img.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title mb-3">Data Spring 82-Smart-Grid Stability Prediction</h5>
+                  <p class="card-text text-secondary mb-0">Start on</p>
+                  <p class="card-text">08 jul'22 21:00</p>
+                  <a href="#" class="btn btn-outline-success">view more</a>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card shadow" style=" border: 0px;">
+                <img src="images/card-img.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title mb-3">Data Spring 82-Smart-Grid Stability Prediction</h5>
+                  <p class="card-text text-secondary mb-0">Start on</p>
+                  <p class="card-text">08 jul'22 21:00</p>
+                  <a href="#" class="btn btn-outline-success">view more</a>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card shadow" style=" border: 0px;">
+                <img src="images/card-img.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title mb-3">Data Spring 82-Smart-Grid Stability Prediction</h5>
+                  <p class="card-text text-secondary mb-0">Start on</p>
+                  <p class="card-text">08 jul'22 21:00</p>
+                  <a href="#" class="btn btn-outline-success">view more</a>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card shadow" style=" border: 0px;">
+                <img src="images/card-img.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title mb-3">Data Spring 82-Smart-Grid Stability Prediction</h5>
+                  <p class="card-text text-secondary mb-0">Start on</p>
+                  <p class="card-text">08 jul'22 21:00</p>
+                  <a href="#" class="btn btn-outline-success">view more</a>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card shadow" style=" border: 0px;">
+                <img src="images/card-img.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title mb-3">Data Spring 82-Smart-Grid Stability Prediction</h5>
+                  <p class="card-text text-secondary mb-0">Start on</p>
+                  <p class="card-text">08 jul'22 21:00</p>
+                  <a href="#" class="btn btn-outline-success">view more</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="card-box row row-cols-1 row-cols-md-3 g-5">
+            <div class="col">
+              <div class="card shadow" style=" border: 0px;">
+                <img src="images/card-img.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title mb-3">Data Spring 82-Smart-Grid Stability Prediction</h5>
+                  <p class="card-text text-secondary mb-0">Start on</p>
+                  <p class="card-text">08 jul'22 21:00</p>
+                  <a href="#" class="btn btn-outline-success">view more</a>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card shadow" style=" border: 0px;">
+                <img src="images/card-img.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title mb-3">Data Spring 82-Smart-Grid Stability Prediction</h5>
+                  <p class="card-text text-secondary mb-0">Start on</p>
+                  <p class="card-text">08 jul'22 21:00</p>
+                  <a href="#" class="btn btn-outline-success">view more</a>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card shadow" style=" border: 0px;">
+                <img src="images/card-img.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title mb-3">Data Spring 82-Smart-Grid Stability Prediction</h5>
+                  <p class="card-text text-secondary mb-0">Start on</p>
+                  <p class="card-text">08 jul'22 21:00</p>
+                  <a href="#" class="btn btn-outline-success">view more</a>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card shadow" style=" border: 0px;">
+                <img src="images/card-img.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title mb-3">Data Spring 82-Smart-Grid Stability Prediction</h5>
+                  <p class="card-text text-secondary mb-0">Start on</p>
+                  <p class="card-text">08 jul'22 21:00</p>
+                  <a href="#" class="btn btn-outline-success">view more</a>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card shadow" style=" border: 0px;">
+                <img src="images/card-img.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title mb-3">Data Spring 82-Smart-Grid Stability Prediction</h5>
+                  <p class="card-text text-secondary mb-0">Start on</p>
+                  <p class="card-text">08 jul'22 21:00</p>
+                  <a href="#" class="btn btn-outline-success">view more</a>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card shadow" style=" border: 0px;">
+                <img src="images/card-img.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title mb-3">Data Spring 82-Smart-Grid Stability Prediction</h5>
+                  <p class="card-text text-secondary mb-0">Start on</p>
+                  <p class="card-text">08 jul'22 21:00</p>
+                  <a href="#" class="btn btn-outline-success">view more</a>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card shadow" style=" border: 0px;">
+                <img src="images/card-img.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title mb-3">Data Spring 82-Smart-Grid Stability Prediction</h5>
+                  <p class="card-text text-secondary mb-0">Start on</p>
+                  <p class="card-text">08 jul'22 21:00</p>
+                  <a href="#" class="btn btn-outline-success">view more</a>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card shadow" style=" border: 0px;">
+                <img src="images/card-img.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title mb-3">Data Spring 82-Smart-Grid Stability Prediction</h5>
+                  <p class="card-text text-secondary mb-0">Start on</p>
+                  <p class="card-text">08 jul'22 21:00</p>
+                  <a href="#" class="btn btn-outline-success">view more</a>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card shadow" style=" border: 0px;">
+                <img src="images/card-img.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title mb-3">Data Spring 82-Smart-Grid Stability Prediction</h5>
+                  <p class="card-text text-secondary mb-0">Start on</p>
+                  <p class="card-text">08 jul'22 21:00</p>
+                  <a href="#" class="btn btn-outline-success">view more</a>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card shadow" style=" border: 0px;">
+                <img src="images/card-img.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title mb-3">Data Spring 82-Smart-Grid Stability Prediction</h5>
+                  <p class="card-text text-secondary mb-0">Start on</p>
+                  <p class="card-text">08 jul'22 21:00</p>
+                  <a href="#" class="btn btn-outline-success">view more</a>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card shadow" style=" border: 0px;">
+                <img src="images/card-img.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title mb-3">Data Spring 82-Smart-Grid Stability Prediction</h5>
+                  <p class="card-text text-secondary mb-0">Start on</p>
+                  <p class="card-text">08 jul'22 21:00</p>
+                  <a href="#" class="btn btn-outline-success">view more</a>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card shadow" style=" border: 0px;">
+                <img src="images/card-img.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title mb-3">Data Spring 82-Smart-Grid Stability Prediction</h5>
+                  <p class="card-text text-secondary mb-0">Start on</p>
+                  <p class="card-text">08 jul'22 21:00</p>
+                  <a href="#" class="btn btn-outline-success">view more</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="card-box row row-cols-1 row-cols-md-3 g-5">
+            <div class="col">
+              <div class="card shadow" style=" border: 0px;">
+                <img src="images/card-img.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title mb-3">Data Spring 82-Smart-Grid Stability Prediction</h5>
+                  <p class="card-text text-secondary mb-0">Start on</p>
+                  <p class="card-text">08 jul'22 21:00</p>
+                  <a href="#" class="btn btn-outline-success">view more</a>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card shadow" style=" border: 0px;">
+                <img src="images/card-img.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title mb-3">Data Spring 82-Smart-Grid Stability Prediction</h5>
+                  <p class="card-text text-secondary mb-0">Start on</p>
+                  <p class="card-text">08 jul'22 21:00</p>
+                  <a href="#" class="btn btn-outline-success">view more</a>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card shadow" style=" border: 0px;">
+                <img src="images/card-img.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title mb-3">Data Spring 82-Smart-Grid Stability Prediction</h5>
+                  <p class="card-text text-secondary mb-0">Start on</p>
+                  <p class="card-text">08 jul'22 21:00</p>
+                  <a href="#" class="btn btn-outline-success">view more</a>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card shadow" style=" border: 0px;">
+                <img src="images/card-img.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title mb-3">Data Spring 82-Smart-Grid Stability Prediction</h5>
+                  <p class="card-text text-secondary mb-0">Start on</p>
+                  <p class="card-text">08 jul'22 21:00</p>
+                  <a href="#" class="btn btn-outline-success">view more</a>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card shadow" style=" border: 0px;">
+                <img src="images/card-img.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title mb-3">Data Spring 82-Smart-Grid Stability Prediction</h5>
+                  <p class="card-text text-secondary mb-0">Start on</p>
+                  <p class="card-text">08 jul'22 21:00</p>
+                  <a href="#" class="btn btn-outline-success">view more</a>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card shadow" style=" border: 0px;">
+                <img src="images/card-img.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title mb-3">Data Spring 82-Smart-Grid Stability Prediction</h5>
+                  <p class="card-text text-secondary mb-0">Start on</p>
+                  <p class="card-text">08 jul'22 21:00</p>
+                  <a href="#" class="btn btn-outline-success">view more</a>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card shadow" style=" border: 0px;">
+                <img src="images/card-img.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title mb-3">Data Spring 82-Smart-Grid Stability Prediction</h5>
+                  <p class="card-text text-secondary mb-0">Start on</p>
+                  <p class="card-text">08 jul'22 21:00</p>
+                  <a href="#" class="btn btn-outline-success">view more</a>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card shadow" style=" border: 0px;">
+                <img src="images/card-img.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title mb-3">Data Spring 82-Smart-Grid Stability Prediction</h5>
+                  <p class="card-text text-secondary mb-0">Start on</p>
+                  <p class="card-text">08 jul'22 21:00</p>
+                  <a href="#" class="btn btn-outline-success">view more</a>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card shadow" style=" border: 0px;">
+                <img src="images/card-img.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title mb-3">Data Spring 82-Smart-Grid Stability Prediction</h5>
+                  <p class="card-text text-secondary mb-0">Start on</p>
+                  <p class="card-text">08 jul'22 21:00</p>
+                  <a href="#" class="btn btn-outline-success">view more</a>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card shadow" style=" border: 0px;">
+                <img src="images/card-img.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title mb-3">Data Spring 82-Smart-Grid Stability Prediction</h5>
+                  <p class="card-text text-secondary mb-0">Start on</p>
+                  <p class="card-text">08 jul'22 21:00</p>
+                  <a href="#" class="btn btn-outline-success">view more</a>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card shadow" style=" border: 0px;">
+                <img src="images/card-img.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title mb-3">Data Spring 82-Smart-Grid Stability Prediction</h5>
+                  <p class="card-text text-secondary mb-0">Start on</p>
+                  <p class="card-text">08 jul'22 21:00</p>
+                  <a href="#" class="btn btn-outline-success">view more</a>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card shadow" style=" border: 0px;">
+                <img src="images/card-img.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title mb-3">Data Spring 82-Smart-Grid Stability Prediction</h5>
+                  <p class="card-text text-secondary mb-0">Start on</p>
+                  <p class="card-text">08 jul'22 21:00</p>
+                  <a href="#" class="btn btn-outline-success">view more</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div id="pagination-container" class="mt-5">
+        </div>
+      </div>
+    </section>
+    <section id="footer">
+      <div class="footer-section" style="margin-top: 50px;">
+        <div class="d-flex flex-wrap">
+          <div class="flex-fill">
+            <img src="">
+          </div>
+          <div class="flex-fill ">
+            <ul class="list-unstyled text-secondary text-start">
+              <li class="Learn text-dark fw-bold">Learn</li>
+              <li class=""><a href="">Data Science & AI Courses</a></li>
+              <li class=""><a href="">Practice Data Science & AI Challenges</a></li>
+              <li class=""><a href="">Discussion forum</a></li>
+              <li class=""><a href="">Data Science & AI Live Sessions</a></li>
+              <li class=""><a href="">Community Notebooks (Code Share)</a></li>
+            </ul>
+          </div>
+          <div class="flex-fill">
+            <ul class="list-unstyled text-secondary text-start">
+              <li class="Learn text-dark fw-bold">Getting Started</li>
+              <li class=""><a href="">Data Science</a></li>
+              <li class=""><a href="">Machine Learning</a></li>
+              <li class=""><a href="">Deep Learning</a></li>
+              <li class=""><a href="">Data Visualization 101</a></li>
+              <li class=""><a href="">Natural Language Processing 101</a></li>
+              <li class=""><a href="">Time Series 101</a></li>
+            </ul>
+          </div>
+          <div class="flex-fill">
+            <ul class="list-unstyled text-secondary text-start">
+              <li class="Learn text-dark fw-bold">More</li>
+              <li class=""><a href="">Host AI & Machine Learning Challenges</a></li>
+              <li class=""><a href="">Blog</a></li>
+              <li class=""><a href="">Learner Stories</a></li>
+            </ul>
+          </div>
+          <div class="flex-fill">
+            <ul class="list-unstyled text-secondary text-start">
+              <li class="Learn text-dark fw-bold">Organization</li>
+              
+              
+              <li class=""><a href="">About Us</a></li>
+              <li class="">Contact Us</li>
+              <li class="text-dark fw-bold pt-3">Social Media</li>
+              <li class="d-grid">
+
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="terms text-secondary" style="font-size: 14px;">
+          <p class="mb-0">© 2022 DPhi</p>
+          <div class="vr"></div>
+          <p class="mb-0">Terms</p>
+          <div class="vr"></div>
+          <p class="mb-0">Privacy</p>
+        </div>
+      </div>
+    </section>
+
+    <script>
+      const lists = document.querySelectorAll(".nav li");
+      lists.forEach((item) => {
+      item.addEventListener("click", () => {
+      document.querySelector(".nav li.active").classList.remove("active");
+      item.classList.add("active");
+  });
+});
+    </script>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+<script type="text/javascript" src="path_to/jquery.js"></script>
+<script type="text/javascript" src="path_to/jquery.simplePagination.js"></script>
+    <script>
+      var items = $(".past-card .card-box");
+    var numItems = items.length;
+    var perPage = 1;
+
+    items.slice(perPage).hide();
+
+    $('#pagination-container').twbsPagination({
+        items: numItems,
+        itemsOnPage: perPage,
+        prevText: "&laquo;",
+        nextText: "&raquo;",
+        onPageClick: function (pageNumber , evt) {
+            var showFrom = perPage * (pageNumber - 1);
+            var showTo = showFrom + perPage;
+            items.hide().slice(showFrom, showTo).show();
+        }
+    });
+    </script>
+</body>
+
+</html>
