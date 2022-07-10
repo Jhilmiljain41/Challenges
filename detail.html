@@ -1,0 +1,437 @@
+  <!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>AI and Data Science Challenges</title>
+  <!--bootstrap-->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="css/detail.css">
+  <link rel="stylesheet" href="css/styles.css">
+
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js  "></script>
+</head>
+
+<body>
+  <section class="shadow-sm">
+    <div id="header">
+    <nav class="navbar navbar-expand-lg navbar-light bg-white">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">Navbar</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0 ms-auto">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Courses</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Challenges
+              </a>
+              <ul class="dropdown-menu shadow-sm" aria-labelledby="navbarDropdown">
+                <li><a class="dropdown-item" href="#">Active/upcoming</a></li>
+                <li><a class="dropdown-item" href="#">Practice</a></li>
+              </ul>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Bootcamps
+              </a>
+              <ul class="dropdown-menu shadow-sm" aria-labelledby="navbarDropdown">
+                <li><a class="dropdown-item" href="#">View All Bootcamp</a></li>
+                <li><a class="dropdown-item" href="#">Data Engineering</a></li>
+                <li><a class="dropdown-item" href="#">Data Science by IIT-Analytics clubs and Dphi</a></li>
+                <li><a class="dropdown-item" href="#">Deep Learning by IIT-Analytics clubs and Dphi</a></li>
+              </ul>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                More
+              </a>
+              <ul class="dropdown-menu shadow-sm" aria-labelledby="navbarDropdown">
+                <li><a class="dropdown-item" href="#">Notebooks</a></li>
+                <li><a class="dropdown-item" href="#">Live Sessions</a></li>
+                <li><a class="dropdown-item" href="#">Discuss</a></li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="#">Donate</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="#">Wall of Love</a>
+            </li>
+          </ul>
+          <form class="d-flex">
+            <button class="btn px-4 py-2 btn-outline-success me-2" type="submit">Login</button>
+            <button class="btn px-4 py-2 btn-success shadow" type="submit">Join for free</button>
+          </form>
+        </div>
+      </div>
+    </nav>
+  </div>
+  </section>
+  <section id="banner-section-01">
+    <div id="banner">
+      <div class="text-white text-start" style="padding-top:48px; padding-bottom:48px;">
+        <button class="btn btn-danger">Ended on 4th Jul'22 09:00 PM (India Standard Time)</button>
+        <h3>Data Sprint 81 - Neuroheadstate Eye-State Classification</h3>
+        <p>Predict eye-open state from EEG Neuroheadset data</p>
+        <div class="mb-5 d-flex text-black banner-box rounded">
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="shadow sticky-top navbar-light bg-white">
+    <div id="header">
+      <nav id="navbar-example2" class="navbar px-3">
+        <ul class="nav">
+          <li class="nav-item active">
+            <a class="nav-link text-secondary" data-page="overview"  href="#">Overview</a>
+          </li>
+          <li class="nav-item ">
+            <a class="nav-link text-secondary" data-page="data" href="#">Data</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-secondary" data-page="notebooks" href="#">Notebooks</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-secondary" data-page="discussion" href="#">Discussion</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-secondary" data-page="leaderboard" href="#">Leaderboard</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </section>
+  <div id=pages>
+      <section id="overview" class="page" data-page="overview">
+        <div id="overview-section">
+          <div class="progress-bar d-flex flex-row shadow-sm mt-4">
+            <div class="div1 flex-grow-1">
+              <span class="d-flex align-items-center flex-column mt-1">
+                <span>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="currentColor" class="bi bi-check-circle-fill" viewBox="0 0 16 16">
+                    <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-3.97-3.03a.75.75 0 0 0-1.08.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-.01-1.05z"/>
+                  </svg>
+                </span>
+                <span style="margin-top: 16px; width:100%;">
+                  <span style="text-align: center;">
+                    <h6 class="mb-0">Challenge Starts</h6>
+                    <p class="mb-0" style="font-size: 12px;">01 Jul 09:00 pm</p>
+                  </span>
+                </span>
+              </span>
+            </div>
+            <div class="div1 flex-grow-1">
+              <hr>
+              <span class="d-flex align-items-center flex-column mt-1">
+                <span>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="currentColor" class="bi bi-check-circle-fill" viewBox="0 0 16 16">
+                    <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-3.97-3.03a.75.75 0 0 0-1.08.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-.01-1.05z"/>
+                  </svg>
+                </span>
+                <span style="margin-top: 16px; width: 100%;">
+                  <span style="text-align: center;">
+                    <h6 class="mb-0">Challenge Starts</h6>
+                    <p class="mb-0" style="font-size: 12px;">01 Jul 09:00 pm</p>
+                  </span>
+                </span>
+              </span>
+            </div>
+            <div class="div1 flex-grow-1">
+              <hr>
+              <span class="d-flex align-items-center flex-column mt-1">
+                <span>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="currentColor" class="bi bi-check-circle-fill" viewBox="0 0 16 16">
+                    <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-3.97-3.03a.75.75 0 0 0-1.08.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-.01-1.05z"/>
+                  </svg>
+                </span>
+                <span style=" margin-top: 16px; width: 100%;">
+                  <span style=" text-align: center;">
+                    <h6 class="mb-0">Challenge Starts</h6>
+                    <p class="mb-0" style="font-size: 12px;">01 Jul 09:00 pm</p>
+                  </span>
+                </span>
+              </span>
+            </div>
+          </div>
+          <div class="overview-content">
+            <div class="container-fluid">
+              <div class="row text-start">
+                <div class="col-lg-2 p-2 section01">
+                  <div class="bg-light shadow-sm d-flex flex-column">
+                    <span class="bg-dark p-2 px-3 m-0 flex-fill fs-5 text-white">About</span>
+                    <span class="p-2 px-3 m-0 flex-fill fs-5">Evaluation</span>
+                  </div>
+                </div>
+                <div class="col-lg-10 p-2">
+                  <div>
+                    <p style="margin-left: 8px; font-size: 15px;">&nbsp;</p>
+                    <p style="margin-left: 8px; font-size: 15px;">Over the years, technology has been inclined and interested in testing its potentials in the field of human activity classification. They have come up with a diversity of innovations ranging from wearable devices to artificial intelligence systems software. Those that are drawn to the use and derivation of various intelligent systems are already on the step of venturing the fields of neural network and machine learning algorithms, exploring its capabilities to try and classify various human activities, ranging from the different movements and actions that the human body can perform, to the complexities of a hand gesture, down to the most minute kinds of physical action such as the eye movement. </p>
+                    <p style="margin-left: 8px; font-size: 15px;">One of the devices that has been gaining high traction lately is the availability of wireless electroencephalogram (EEG) headsets in the market. EEG is a device used to read electrical signals produced by the brain while performing different activities ranging from physical, mental to emotional. It is mainly used in the medical field specifically in the past, but with the current advancements in technology maximizing the use of this specific sensor's anatomy, its use is now being explored in various fields</p>
+                    <p style="margin-left: 8px; font-size: 15px;">Your Task is to come up with an efficient Machine Learning model based on the data obtained from EEG’s that helps to classify and differentiate  two states of minute action: having a person's eyes closed and eyes opened with the highest possible accuracy</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+    </section>
+      <section id="data" class="page hide" data-page="data" style="margin-top: 24px;">
+        <div class="data-section">
+          <div class="container-fluid">
+            <div class="row text-start">
+              <div class="col-lg-8" style="padding: 10px">
+                <p>The dataset is composed of 15 attributes in total, each inclusive of the eye state classified for each data point acquired using a video recording that was simultaneously done while collecting the EEG data using the EEG device.<br>
+                  The attributes that the specified dataset contains are the channels in the EEG device used to record the data. Instances were input chronologically, enabling the analysis of useful test set for syntactic and semantic theories. 
+                  There is a total of 14 electrodes attached, each labelled and placed on the following scalp areas: AF3, F7, F3, FC5, T7, P7, FC6, F4, F8, O1, O2, P8, T8 and AF4. </p>
+                  <div class="text-center m-4"><img src="images/data-img-1.png" width="70%"></div>
+                  <p> <span class="fw-bold">Sample submission:</span> You should submit a CSV file with a header row and the sample submission can be found below:</p>
+                  <div class="d-flex flex-column mt-3">
+                    <p class="fw-bold ms-3 mb-0">eyeDetection</p>
+                    <hr>
+                    <p class="ms-3 mb-0">0</p>
+                    <hr>
+                    <p class="ms-3 mb-0">1</p>
+                    <hr>
+                    <p class="ms-3 mb-0">0</p>
+                    <hr>
+                    <p class="ms-3 mb-0">1</p>
+                    <hr>
+                    <p class="ms-3 mb-0">1</p>
+                    <hr>
+                    <p class="ms-3 mb-0">1</p>
+                    <hr>
+                  </div>
+                  <h4>Saving Prediction File & Sample Submission</h4>
+                  <p class="text-secondary mt-3">You can find more details on how to save a prediction file here: <a href="https://discuss.dphi.tech/t/how-to-submit-predictions/548">https://discuss.dphi.tech/t/how-to-submit-predictions/548 </a><br>Etc.<br>Note that the header name should be ‘eyeDetection’ else it will throw an evaluation error.</p>
+                  <hr>
+                  <h5>Notebook Submission</h5>
+                  <h6>Steps to follow to submit your notebook:</h6>
+                  <ul class="mt-3">
+                    <li>Go to the <a href="">Notebook section</a> on this challenge page</li>
+                    <li>Click on the <span class="fw-bold">'Upload Notebook'</span> button on top left corner as shown in the image below:
+                      <div class="text-center">
+                        <img src="images/upload_notebook.jpg" style="width: 80%;">
+                      </div></li>
+                    <li>Make sure to make the visibility of your notebook as 'public' while uploading the notebook.
+                      <div class="text-center">
+                        <img src="images/notebook_visibility.jpg" style="width: 80%;">
+                      </div>
+                    </li>
+                    <li>Provide <span class="fw-bold">Notebook Title, Summary,</span> add some <span class="fw-bold">tags,</span> go to <span class="fw-bold">next, chose a file</span> and click on <span class="fw-bold">Upload.</span>
+                      <div class="text-center">
+                        <img src="images/upload_notebook_2.jpg" style="width: 80%;">
+                      </div></li>
+                  </ul>
+                </div>
+              <div class="col-lg-4" style="padding: 10px;">
+                <div class="d-flex gap-3" style="min-height: 10%;">
+                  <hr class="side">
+                  <div class="d-flex flex-column">
+                    <h5>Resources</h5>
+                    <p class="mb-0"><a href="" >train dataset</a></p>
+                    <p class="mb-0"><a href="">test dataset</a></p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+    </section>
+      <section id="notebooks" class="page hide" data-page="notebooks">
+        <div class="notebooks-section" style="margin-top: 24px">
+          <nav id="navbar" class="navbar px-3 bg-light">
+            <ul class="nav">
+              <li class="nav-item active">
+                <a class="nav-link text-dark" href="#">My Notebooks</a>
+              </li>
+              <!--<li class="nav-item">
+                <a class="nav-link" href="#"></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link"href="#"></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#"></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#"></a>
+              </li>-->
+            </ul>
+            <form class="d-flex">
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+              <div class="nav-item dropdown bar">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Newest
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                  <li><a class="dropdown-item" href="#">Newest</a></li>
+                  <li><a class="dropdown-item" href="#">Oldest</a></li>
+                  <li><a class="dropdown-item" href="#">Top voted</a></li>
+                  <li><a class="dropdown-item" href="#">Most viewed</a></li>
+                </ul>
+              </div>
+            </form>
+          </nav>
+          <div class="my-4">
+            <div style="margin-top: 20px; visibility: visible; margin-bottom: 20px;">
+              <div class="p-3 shadow-sm">
+                <div class="container-fluid">
+                  <div class="row" style="margin: -6px;">
+                    <div class="col-md-1">
+                      <img src="images/dp-1.svg" class="border rounded-circle" style="width: 100%;">
+                    </div>
+                    <div class="col-md-6">
+                      <div class="d-flex flex-column text-start">
+                        <h5>Neuroheadstate Eye-State Classification</h5>
+                        <div class="text-secondary mt-2">
+                          <p class="mb-0">udayk</p>
+                          <p class="mb-0">#classification</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-md-3 d-flex align-items-center">
+                      <div class="row flex-fill">
+                        <div class="col-md-6 ">
+                          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-caret-up-fill" viewBox="0 0 16 16">
+                            <path d="m7.247 4.86-4.796 5.481c-.566.647-.106 1.659.753 1.659h9.592a1 1 0 0 0 .753-1.659l-4.796-5.48a1 1 0 0 0-1.506 0z"/>
+                          </svg>1
+                        </div>
+                        <div class="col-md-6">
+                          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-eye-fill" viewBox="0 0 16 16">
+                            <path d="M10.5 8a2.5 2.5 0 1 1-5 0 2.5 2.5 0 0 1 5 0z"/>
+                            <path d="M0 8s3-5.5 8-5.5S16 8 16 8s-3 5.5-8 5.5S0 8 0 8zm8 3.5a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7z"/>
+                          </svg> 2
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-md-2 text-end d-flex align-items-center">
+                      <p class="text-secondary flex-fill" style="font-size:14px;">8 days ago</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="p-3 d-flex justify-content-center">
+              <nav aria-label="...">
+                <ul class="pagination pagination-circle">
+                  <li class="page-item">
+                    <a class="page-link">«</a>
+                  </li>
+                  <li class="page-item active" aria-current="page">
+                    <a class="page-link" href="#">1 <span class="visually-hidden">(current)</span></a>
+                  </li>
+                  <li class="page-item">
+                    <a class="page-link" href="#">»</a>
+                  </li>
+                </ul>
+              </nav>
+            </div>
+          </div>
+        </div>
+    </section>
+      <section id="discussion" class="page hide" data-page="discussion">
+        <div class="discussion-section px-3" style="padding-top: 40px;">
+          <div class="px-3 d-flex flex-row justify-content-between text-secondary">
+            <p class="mb-0 fs-5"><a href="">Start Disussion</a></p>
+            <p class="mb-0 fs-5">0 replies</p>
+          </div>
+          <hr style="border-top: 2px solid; margin: 0;">
+        </div>
+    </section>
+      <section id="leaderboard" class="shadow-sm page hide" data-page="leaderboard">
+        <div class="leaderboard-section" style="padding-bottom: 40px;">
+        </div>
+    </section>
+  </div>
+    <section id="footer">
+      <div class="footer-section" style="margin-top: 50px;">
+        <div class="d-flex flex-wrap">
+          <div class="flex-fill">
+            <img src="">
+          </div>
+          <div class="flex-fill ">
+            <ul class="list-unstyled text-secondary text-start">
+              <li class="Learn text-dark fw-bold">Learn</li>
+              <li class=""><a href="">Data Science & AI Courses</a></li>
+              <li class=""><a href="">Practice Data Science & AI Challenges</a></li>
+              <li class=""><a href="">Discussion forum</a></li>
+              <li class=""><a href="">Data Science & AI Live Sessions</a></li>
+              <li class=""><a href="">Community Notebooks (Code Share)</a></li>
+            </ul>
+          </div>
+          <div class="flex-fill">
+            <ul class="list-unstyled text-secondary text-start">
+              <li class="Learn text-dark fw-bold">Getting Started</li>
+              <li class=""><a href="">Data Science</a></li>
+              <li class=""><a href="">Machine Learning</a></li>
+              <li class=""><a href="">Deep Learning</a></li>
+              <li class=""><a href="">Data Visualization 101</a></li>
+              <li class=""><a href="">Natural Language Processing 101</a></li>
+              <li class=""><a href="">Time Series 101</a></li>
+            </ul>
+          </div>
+          <div class="flex-fill">
+            <ul class="list-unstyled text-secondary text-start">
+              <li class="Learn text-dark fw-bold">More</li>
+              <li class=""><a href="">Host AI & Machine Learning Challenges</a></li>
+              <li class=""><a href="">Blog</a></li>
+              <li class=""><a href="">Learner Stories</a></li>
+            </ul>
+          </div>
+          <div class="flex-fill">
+            <ul class="list-unstyled text-secondary text-start">
+              <li class="Learn text-dark fw-bold">Organization</li>
+
+
+              <li class=""><a href="">About Us</a></li>
+              <li class="">Contact Us</li>
+              <li class="text-dark fw-bold pt-3">Social Media</li>
+              <li class="d-grid">
+
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="terms text-secondary" style="font-size: 14px;">
+          <p class="mb-0">© 2022 DPhi</p>
+          <div class="vr"></div>
+          <p class="mb-0">Terms</p>
+          <div class="vr"></div>
+          <p class="mb-0">Privacy</p>
+        </div>
+      </div>
+    </section>
+
+    <script>
+      const lists = document.querySelectorAll(".nav li");
+      lists.forEach((item) => {
+      item.addEventListener("click", () => {
+      document.querySelector(".nav li.active").classList.remove("active");
+      item.classList.add("active");
+  });
+});
+    </script>
+    <script>
+      $(document).ready(function() {
+    $(".nav li a").on('click', function(e) {
+        e.preventDefault()
+        var page = $(this).data('page');
+        $("#pages .page:not('hide')").stop().fadeOut('fast', function() {
+            $(this).addClass('hide');
+            $('#pages .page[data-page="'+page+'"]').fadeIn('slow').removeClass('hide');
+        });
+        $(this).removeClass('hide');
+    });
+});
+    </script>
+</body>
+
+</html>

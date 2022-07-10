@@ -1,0 +1,108 @@
+#overview-section, .data-section, .notebooks-section, .discussion-section{
+  max-width: 1200px;
+}
+
+@media screen and (min-width: 1200px) {
+  #banner-section-01, #overview-section, .data-section, .notebooks-section, .discussion-section{
+      text-align: center;
+      margin-left: auto;
+      margin-right: auto;
+      justify-content: center;
+  }
+}
+
+.nav {
+    font-size: large;
+  }
+  .nav li {
+    cursor: pointer;
+    position: relative;
+    text-align: center;
+  }
+  .nav li .active:hover{
+    color: black;
+  }
+  .nav li.active::after {
+    position: absolute;
+    content: "";
+    height: 4px;
+    width: 100%;
+    background-color: #ff105e;
+    left: 0;
+    bottom: -7px;
+    border-radius: 20px;
+    animation: appear 0.2s linear;
+  }
+  .hide {
+    display: none;
+}
+.progress-bar{
+  padding: 24px;
+  align-items: flex-start;
+}
+.progress-bar .div1{
+  position: relative;
+  padding-left: 8px;
+  padding-right: 8px;
+}
+.progress-bar .div1 hr{
+  left: calc(-50% + 20px);
+  right: calc(50% + 20px);
+  position: absolute;
+  border-top: 4px solid;
+}
+.overview-content{
+  margin-top: 24px;
+  margin-bottom: 24px;
+  width: calc(100% + 16px);
+  margin-left: -8px;
+}
+.section01{
+  border-right: 0.6px solid rgb(179, 179, 179);
+}
+.data-section a{
+  color: #0d6efd;
+}
+.data-section p a:hover{
+  text-decoration: underline;
+}
+.data-section .side{
+  margin: 0rem 0;
+  border-right: 1px solid;
+  height: auto;
+  align-self: stretch;
+  width: 1px;
+  margin-left: 72px;
+}
+.bar{
+  border: 1px solid black;
+  padding-top: 5px;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-left: 12px;
+}
+.form-control, .bar{
+  border-radius: 50px;
+}
+#navbar .dropdown-menu{
+  top: -9%;
+  min-width: 4rem;
+  font-size: smaller;
+}
+
+.pagination>li>a, .pagination>li>span { 
+  border-radius: 50% !important;
+  margin: 0 5px;
+}
+@media (min-width: 992px){
+  #banner-section-01{
+    background-size: 100%;
+    background-image: url(../images/card-img.png);
+    background-repeat: no-repeat;
+    background-position-x: left;
+    background-position-y: top;
+  }
+  }
+  .banner-box{
+    border-radius: 4px;
+  }
