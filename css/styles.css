@@ -1,35 +1,21 @@
 body{
   justify-content: center;
   overflow: unset;
+  overflow-x:visible !important;
   position: relative;
 }
-#header, #banner,#active-section, #ai-challenges, .upcoming-section, .past-section ,.footer-section{
+#header, #banner,#active-section, #ai-challenges, .upcoming-section, .past-section {
   max-width: 1200px;
 }
 a{
 text-decoration: none;
 color: black;
 }
-.navbar-nav .nav-item{
-  margin-left: 1rem;
-  margin-right: 1rem;
-  font-size: large;
-}
-.navbar-nav .nav-item:hover{
-  border-radius: 8%;
-  background-color: rgb(243, 243, 243);
-}
-.navbar-nav.dropdown:hover .dropdown-menu {
-  display: block;
-  margin-top: 0;
-  border-top: 0px;
-  border-top-left-radius: 0px;
-  border-top-right-radius: 0px;
-  border-color: white;
-  min-width: fit-content;
-}
 #banner-section{
   position: relative;
+}
+.sticky-top{
+  top: 70px;
 }
 .box{
   max-width: 20%;
@@ -38,15 +24,15 @@ color: black;
 font-size: 2rem;
 }
 /* fixed bar*/
-.nav {
+.active-nav {
   font-size: large;
 }
-.nav .nav-link {
+.active-nav .nav-link {
   cursor: pointer;
   position: relative;
   text-align: center;
 }
-.nav .nav-link.active::after {
+.active-nav .nav-link.active::after {
   position: absolute;
   content: "";
   height: 4px;
@@ -175,7 +161,7 @@ margin-left:25px;
 margin-right: 25px;
 }
 @media screen and (min-width: 1200px) {
-  body,#header ,#banner,#active-section,#ai-challenges,.upcoming-section,.past-section, .footer-section{
+  body,#header ,#banner,#active-section,#ai-challenges,.upcoming-section,.past-section{
       text-align: center;
       margin-left: auto;
       margin-right: auto;
@@ -241,4 +227,8 @@ margin-right: 25px;
 .box .num{
   font-size: 1.5rem;
 }
+}
+
+table tr th, td{
+  padding: 1rem !important;
 }

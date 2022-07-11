@@ -1,9 +1,9 @@
-#overview-section, .data-section, .notebooks-section, .discussion-section{
+#overview-section, .data-section, .notebooks-section, .discussion-section, .leaderboard-section{
   max-width: 1200px;
 }
 
 @media screen and (min-width: 1200px) {
-  #banner-section-01, #overview-section, .data-section, .notebooks-section, .discussion-section{
+  #banner-section-01, #overview-section, .data-section, .notebooks-section, .discussion-section, .leaderboard-section{
       text-align: center;
       margin-left: auto;
       margin-right: auto;
@@ -105,4 +105,26 @@
   }
   .banner-box{
     border-radius: 4px;
+  }
+  .position{
+    gap: 10px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+  .position01 ,.position02, .position03{
+    border-radius: 0.2em;
+    min-width: 350px;
+  }
+  .position01{
+    background: rgba(255, 215, 0, 0.1);
+    border: 1px solid rgb(255, 215, 0);
+    
+  }
+  .position02{
+    background: rgba(187, 187, 187, 0.1);
+    border: 1px solid rgb(187, 187, 187);
+  }
+  .position03{
+    background: rgba(205, 127, 50, 0.1);
+    border: 1px solid rgb(205, 127, 50);
   }
