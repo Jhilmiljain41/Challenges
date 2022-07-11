@@ -14,6 +14,7 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
     <script type="text/javascript" src="path_to/jquery.js"></script>
     <script type="text/javascript" src="path_to/jquery.simplePagination.js"></script>
+    <script src="js/script.js" type="text/javascript"></script>
 </head>
 
 <body data-bs-spy="scroll" data-bs-target="#navbar-example2" data-bs-offset="0" class="scrollspy-example" tabindex="0">
@@ -504,7 +505,7 @@
       </div>
     </section>
 
-    <script>
+    <!--<script>
       const lists = document.querySelectorAll(".nav li");
       lists.forEach((item) => {
       item.addEventListener("click", () => {
@@ -512,30 +513,8 @@
       item.classList.add("active");
   });
 });
-    </script>
+    </script>-->
 
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
-<script type="text/javascript" src="path_to/jquery.js"></script>
-<script type="text/javascript" src="path_to/jquery.simplePagination.js"></script>
-    <script>
-      var items = $(".past-card .card-box");
-    var numItems = items.length;
-    var perPage = 1;
-
-    items.slice(perPage).hide();
-
-    $('#pagination-container').pagination({
-        items: numItems,
-        itemsOnPage: perPage,
-        prevText: "&laquo;",
-        nextText: "&raquo;",
-        onPageClick: function (pageNumber , evt) {
-            var showFrom = perPage * (pageNumber - 1);
-            var showTo = showFrom + perPage;
-            items.hide().slice(showFrom, showTo).show();
-        }
-    });
-    </script>
 </body>
 
 </html>
