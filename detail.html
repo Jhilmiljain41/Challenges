@@ -1157,7 +1157,7 @@
             <a class="nav-link text-secondary" data-page="leaderboard" href="#">Leaderboard</a>
           </li>
         </ul>
-        <form class="d-flex">
+        <form class="d-lg-flex me-3 erase">
           <button class="btn btn-success" type="submit">Register</button>
         </form>
       </nav>
@@ -1218,12 +1218,12 @@
           <div class="overview-content">
             <div class="container-fluid">
               <div class="row text-start">
-                <div class="col-lg-2 p-2 section01">
+                <div class="col-lg-2 p-lg-2 section01">
                   <div class="bg-light shadow-sm d-flex flex-column side-bar">
-                    <span class="bg-dark p-2 px-3 flex-fill fs-5"><a data-page="about" class="text-white" href="">About</a></span>
-                    <span class="p-2 px-3 flex-fill fs-5"><a data-page="evaluation" href="">Evaluation</a></span>
-                    <span class="bg-dark p-2 px-3 flex-fill fs-5"><a data-page="extra1" class="text-white" href="">Extra1</a></span>
-                    <span class="p-2 px-3 flex-fill fs-5"><a data-page="extra2" href="">extra2</a></span>
+                    <span class="bg-box p-2 px-3 flex-lg-fill fs-lg-5 act"><a data-page="about" class="black-section" href="">About</a></span>
+                    <span class="p-2 px-3 flex-lg-fill fs-lg-5"><a data-page="evaluation" href="" >Evaluation</a></span>
+                    <span class="bg-box p-2 px-3 flex-lg-fill fs-lg-5"><a data-page="extra1" class="black-section" href="">Extra1</a></span>
+                    <span class="p-2 px-3 flex-lg-fill fs-lg-5"><a data-page="extra2" href="">extra2</a></span>
                   </div>
                 </div>
                 <div id="page-change" class="col-lg-10 p-2">
@@ -1851,6 +1851,13 @@
       item.addEventListener("click", () => {
       document.querySelector(".top-bar02 li.active").classList.remove("active");
       item.classList.add("active");
+  });
+});
+      const list02 = document.querySelectorAll(".side-bar span");
+      list02.forEach((item) => {
+      item.addEventListener("click", () => {
+      document.querySelector(".side-bar span.act").classList.remove("act");
+      item.classList.add("act");
   });
 });
       </script>
