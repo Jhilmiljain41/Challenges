@@ -1,7 +1,6 @@
 body{
   justify-content: center;
   overflow: unset;
-  overflow-x:visible !important;
   position: relative;
 }
 #header, #banner,#active-section, #ai-challenges, .upcoming-section, .past-section {
@@ -16,6 +15,7 @@ color: black;
 }
 .sticky-top{
   top: 70px;
+  z-index: 1;
 }
 .box{
   max-width: 20%;
@@ -23,16 +23,22 @@ color: black;
 .box .num{
 font-size: 2rem;
 }
+.hide {
+  display: none;
+}
 /* fixed bar*/
-.active-nav {
+.nav {
   font-size: large;
 }
-.active-nav .nav-link {
+.nav li {
   cursor: pointer;
   position: relative;
   text-align: center;
 }
-.active-nav .nav-link.active::after {
+.nav li .active:hover{
+  color: black;
+}
+.nav li.active::after {
   position: absolute;
   content: "";
   height: 4px;
@@ -162,7 +168,7 @@ margin-right: 25px;
 }
 @media screen and (min-width: 1200px) {
   body,#header ,#banner,#active-section,#ai-challenges,.upcoming-section,.past-section{
-      text-align: center;
+      text-align: auto;
       margin-left: auto;
       margin-right: auto;
       justify-content: center;
@@ -212,7 +218,6 @@ margin-right: 25px;
 .contain-img{
   left: 80px;
 }
-
 }
 @media (max-width: 758px) and (min-width: 498px){
 .upcoming-card, .past-card{
@@ -231,4 +236,10 @@ margin-right: 25px;
 
 table tr th, td{
   padding: 1rem !important;
+}
+
+@media (max-width: 960px){
+  .sticky-top{
+    top: 60px;
+  }
 }
