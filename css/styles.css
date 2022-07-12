@@ -29,6 +29,7 @@ font-size: 2rem;
 /* fixed bar*/
 .nav {
   font-size: large;
+  padding-bottom: 10px;
 }
 .nav li {
   cursor: pointer;

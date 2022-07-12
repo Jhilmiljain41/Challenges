@@ -28,7 +28,6 @@
 .overview-content{
   margin-top: 24px;
   margin-bottom: 24px;
-  width: calc(100% + 16px);
   margin-left: -8px;
 }
 .section01{
@@ -63,7 +62,9 @@
   min-width: 4rem;
   font-size: smaller;
 }
-
+.side-bar span{
+  margin: 0;
+}
 .pagination>li>a, .pagination>li>span { 
   border-radius: 50% !important;
   margin: 0 5px;
@@ -101,4 +102,26 @@
   .position03{
     background: rgba(205, 127, 50, 0.1);
     border: 1px solid rgb(205, 127, 50);
+  }
+  @media (max-width: 592px) {
+    .nav{
+      font-size: smaller !important;
+      padding-bottom: 12px;
+
+    }
+    .nav li a{
+      padding-left: 6px;
+      padding-right: 6px;
+    }
+  }
+  @media (max-width: 990px){
+    .side-bar{
+      flex-direction : row !important;
+      /*border-radius: 8px;
+    margin-left: 40px;
+    margin-right: 40px;
+    margin-top: 4px;
+    margin-bottom: 4pxpx;
+    border: 1px solid;*/
+    }
   }
