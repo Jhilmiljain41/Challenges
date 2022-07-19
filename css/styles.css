@@ -1,6 +1,7 @@
 body{
   justify-content: center;
   overflow: unset;
+  overflow-x:hidden;
   position: relative;
 }
 #header, #banner,#active-section, #ai-challenges, .upcoming-section, .past-section {

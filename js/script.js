@@ -14,8 +14,8 @@ $(document).ready(function() {
     $(".side-bar span a").on('click', function(e) {
         e.preventDefault()
         var pages = $(this).data('page');
-        $("#page-change .pagebar:not('hides')").stop().fadeOut('fast', function() {
-            $(this).addClass('hides');
+        $("#page-change .pagebar:not('hide')").stop().fadeOut('fast', function() {
+            $(this).addClass('hide');
             $('#page-change .pagebar[data-page="'+pages+'"]').fadeIn('slow').removeClass('hide');
         });
     });

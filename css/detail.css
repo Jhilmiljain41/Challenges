@@ -87,6 +87,9 @@
   .bg-box{
     background-color:black;
   }
+  .close-button1{
+    display:none;
+  }
 .pagination>li>a, .pagination>li>span { 
   border-radius: 50% !important;
   margin: 0 5px;
@@ -99,14 +102,12 @@
       justify-content: center;
   }
 }
-@media (min-width: 992px){
-  #banner-section-01{
-    background-size: 100%;
+  .left-window,#banner-section-01{
+    background-size: cover;
     background-image: url(../images/card-img.png);
     background-repeat: no-repeat;
     background-position-x: left;
     background-position-y: top;
-  }
   }
   @media (max-width: 665px){
     .navbar .erase{
@@ -171,3 +172,8 @@
     animation: appear 0.2s linear;
   }
   }
+@media (max-width:988px) {
+  .close-button1{
+    display:block;
+  }
+}
